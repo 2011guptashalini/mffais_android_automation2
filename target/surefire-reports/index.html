@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-KevinApp">
+              <span class="suite-name border-failed">KevinApp</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-KevinApp">
+                    <span>D:\SeleniumSetup\AppiumLearning\Kevin_Android_2\config\suite.testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-KevinApp">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-KevinApp">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-KevinApp">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-KevinApp">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-KevinApp">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-KevinApp">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-KevinApp" class="hide-methods failed suite-KevinApp"> (hide)</a> <!-- hide-methods failed suite-KevinApp -->
+                      <a href="#" panel-name="suite-KevinApp" class="show-methods failed suite-KevinApp"> (show)</a> <!-- show-methods failed suite-KevinApp -->
+                    </span>
+                    <div class="method-list-content failed suite-KevinApp">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KevinApp" title="com.browserstack.suite.SuiteAddABillWithSaving" hash-for-method="test_01">test_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KevinApp" title="com.browserstack.suite.SuiteReconcileScenario1" hash-for-method="test_01">test_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-KevinApp -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-KevinApp" class="hide-methods passed suite-KevinApp"> (hide)</a> <!-- hide-methods passed suite-KevinApp -->
+                      <a href="#" panel-name="suite-KevinApp" class="show-methods passed suite-KevinApp"> (show)</a> <!-- show-methods passed suite-KevinApp -->
+                    </span>
+                    <div class="method-list-content passed suite-KevinApp">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KevinApp" title="com.browserstack.suite.SuiteCheckingAlertsAndErrors" hash-for-method="test_01">test_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KevinApp" title="com.browserstack.suite.SuiteSpent" hash-for-method="test_01">test_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KevinApp" title="com.browserstack.suite.SuiteReconcileScenario2" hash-for-method="test_01">test_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-KevinApp -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-KevinApp" class="panel KevinApp">
+          <div class="suite-KevinApp-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteAddABillWithSaving</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_01">
+                  </a> <!-- test_01 -->
+                  <span class="method-name">test_01</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [0] but found [180]
+	at com.browserstack.suite.AppKeyWords.addABillWithSaving(AppKeyWords.java:136)
+	at com.browserstack.suite.SuiteAddABillWithSaving.test_01(SuiteAddABillWithSaving.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KevinApp-class-failed -->
+          <div class="suite-KevinApp-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteReconcileScenario1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_01">
+                  </a> <!-- test_01 -->
+                  <span class="method-name">test_01</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.35 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;DESKTOP-GVPH1DS&apos;, ip: &apos;192.168.1.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.mmfais.app, browserstack.tunnelIdentifier=, browserstack.appiumLogs=true, bundleID=com.mmfais.app, deviceName=samsung galaxy s8, platform=ANDROID, browserstack.deviceLogs=true, browserstack.video.disableWaterMark=true, acceptSslCerts=false, nativeWebScreenshot=true, acceptSslCert=false, automationName=uiautomator2, platformName=android, udid=ce04171420af10fb0c, 64bit=false, appium_port=38084, browserstack.debug=true, systemPort=8204, browserstack.minOSVersion=5.0, browserstack.ie.noFlash=false, os_version=, mobile={browser=mobile, version=Samsung Galaxy S8-7.0}, version=, appActivity=com.mmfais.app.MainActivity, browserstack.video=true, orig_os=android, realMobile=true, device=samsung galaxy s8, browserstack.callbackStop=true, proxy_type=node}]
+Session ID: 3688bc4578d5f7142ef55b6c9057ea5100c04e19
+*** Element info: {Using=-android uiautomator, value=UiSelector().textMatches(&quot;Enter Name&quot;)}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAndroidUIAutomator(AndroidDriver.java:365)
+	at com.browserstack.suite.AppKeyWords.checkReconcilingScenario1(AppKeyWords.java:385)
+	at com.browserstack.suite.SuiteReconcileScenario1.test_01(SuiteReconcileScenario1.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KevinApp-class-failed -->
+          <div class="suite-KevinApp-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteSpent</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_01">
+                  </a> <!-- test_01 -->
+                  <span class="method-name">test_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KevinApp-class-passed -->
+          <div class="suite-KevinApp-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteCheckingAlertsAndErrors</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_01">
+                  </a> <!-- test_01 -->
+                  <span class="method-name">test_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KevinApp-class-passed -->
+          <div class="suite-KevinApp-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteReconcileScenario2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_01">
+                  </a> <!-- test_01 -->
+                  <span class="method-name">test_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KevinApp-class-passed -->
+        </div> <!-- panel KevinApp -->
+        <div panel-name="test-xml-KevinApp" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\SeleniumSetup\AppiumLearning\Kevin_Android_2\config\suite.testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;KevinApp&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot;TestGalaxy8&quot; parallel=&quot;classes&quot;&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;galaxy_s8&quot;/&gt;
+    &lt;parameter name=&quot;config&quot; value=&quot;suite.conf.json&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteCheckingAlertsAndErrors&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteReconcileScenario1&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteReconcileScenario2&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteAddABillWithSaving&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteSpent&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestGalaxy8 --&gt;
+  &lt;test name=&quot;TestGalaxy8(failed)&quot; parallel=&quot;classes&quot;&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;galaxy_s8&quot;/&gt;
+    &lt;parameter name=&quot;config&quot; value=&quot;suite.conf.json&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteAddABillWithSaving&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_01&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteAddABillWithSaving --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteReconcileScenario1&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_01&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteReconcileScenario1 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteSpent&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteSpent --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteCheckingAlertsAndErrors&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteCheckingAlertsAndErrors --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteReconcileScenario2&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteReconcileScenario2 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestGalaxy8(failed) --&gt;
+&lt;/suite&gt; &lt;!-- KevinApp --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-KevinApp" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for KevinApp</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestGalaxy8 (5 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">TestGalaxy8(failed) (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-KevinApp" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for KevinApp</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-KevinApp" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for KevinApp</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_KevinApp');
+function tableData_KevinApp() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test_01')
+data.setCell(0, 2, 'com.browserstack.suite.SuiteSpent')
+data.setCell(0, 3, 364302);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_01')
+data.setCell(1, 2, 'com.browserstack.suite.SuiteCheckingAlertsAndErrors')
+data.setCell(1, 3, 265085);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test_01')
+data.setCell(2, 2, 'com.browserstack.suite.SuiteReconcileScenario2')
+data.setCell(2, 3, 234285);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test_01')
+data.setCell(3, 2, 'com.browserstack.suite.SuiteAddABillWithSaving')
+data.setCell(3, 3, 164874);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test_01')
+data.setCell(4, 2, 'com.browserstack.suite.SuiteReconcileScenario1')
+data.setCell(4, 3, 42027);
+window.suiteTableData['KevinApp']= { tableData: data, tableDiv: 'times-div-KevinApp'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 17 minutes</span>
+              <div id="times-div-KevinApp">
+              </div> <!-- times-div-KevinApp -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-KevinApp" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for KevinApp</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-KevinApp" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-KevinApp" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteCheckingAlertsAndErrors</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, galaxy_s8)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteReconcileScenario2</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, galaxy_s8)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteReconcileScenario1</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, galaxy_s8)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_01</span>
+                <span class="method-start">34824 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteCheckingAlertsAndErrors</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_01</span>
+                <span class="method-start">34944 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteReconcileScenario2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_01</span>
+                <span class="method-start">35102 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteReconcileScenario1</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">76879 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteSpent</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, galaxy_s8)</span>
+                <span class="method-start">87813 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_01</span>
+                <span class="method-start">121391 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteReconcileScenario2</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">269388 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteAddABillWithSaving</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, galaxy_s8)</span>
+                <span class="method-start">280313 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteCheckingAlertsAndErrors</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">300029 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteSpent</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">485694 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteAddABillWithSaving</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_01</span>
+                <span class="method-start">711222 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">876097 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

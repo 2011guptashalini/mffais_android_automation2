@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [KevinApp]" parallel="tests">
+  <parameter name="environment" value="galaxy_s8"/>
+  <parameter name="config" value="suite.conf.json"/>
+  <test thread-count="3" name="TestGalaxy8" parallel="classes">
+    <parameter name="environment" value="galaxy_s8"/>
+    <parameter name="config" value="suite.conf.json"/>
+    <classes>
+      <class name="com.browserstack.suite.SuiteCheckingAlertsAndErrors"/>
+      <class name="com.browserstack.suite.SuiteReconcileScenario1"/>
+      <class name="com.browserstack.suite.SuiteReconcileScenario2"/>
+      <class name="com.browserstack.suite.SuiteAddABillWithSaving"/>
+      <class name="com.browserstack.suite.SuiteSpent"/>
+    </classes>
+  </test> <!-- TestGalaxy8 -->
+  <test name="TestGalaxy8(failed)" parallel="classes">
+    <parameter name="environment" value="galaxy_s8"/>
+    <parameter name="config" value="suite.conf.json"/>
+    <classes>
+      <class name="com.browserstack.suite.SuiteAddABillWithSaving">
+        <methods>
+          <include name="test_01"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteAddABillWithSaving -->
+      <class name="com.browserstack.suite.SuiteReconcileScenario1">
+        <methods>
+          <include name="test_01"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteReconcileScenario1 -->
+      <class name="com.browserstack.suite.SuiteSpent">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteSpent -->
+      <class name="com.browserstack.suite.SuiteCheckingAlertsAndErrors">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteCheckingAlertsAndErrors -->
+      <class name="com.browserstack.suite.SuiteReconcileScenario2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteReconcileScenario2 -->
+    </classes>
+  </test> <!-- TestGalaxy8(failed) -->
+</suite> <!-- Failed suite [KevinApp] -->

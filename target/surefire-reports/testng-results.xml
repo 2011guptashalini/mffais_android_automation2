@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="KevinApp" duration-ms="887049" started-at="2018-08-10T08:05:53Z" finished-at="2018-08-10T08:20:40Z">
+    <groups>
+    </groups>
+    <test name="TestGalaxy8" duration-ms="887049" started-at="2018-08-10T08:05:53Z" finished-at="2018-08-10T08:20:40Z">
+      <class name="com.browserstack.suite.SuiteSpent">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteSpent@6aaa5eb0]" name="setUp" is-config="true" duration-ms="33578" started-at="2018-08-10T13:37:21Z" finished-at="2018-08-10T13:37:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suite.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[galaxy_s8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test_01()[pri:0, instance:com.browserstack.suite.SuiteSpent@6aaa5eb0]" name="test_01" duration-ms="364302" started-at="2018-08-10T13:37:54Z" finished-at="2018-08-10T13:43:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteSpent@6aaa5eb0]" name="tearDown" is-config="true" duration-ms="10901" started-at="2018-08-10T13:43:59Z" finished-at="2018-08-10T13:44:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.suite.SuiteSpent -->
+      <class name="com.browserstack.suite.SuiteAddABillWithSaving">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteAddABillWithSaving@13969fbe]" name="setUp" is-config="true" duration-ms="430909" started-at="2018-08-10T13:40:33Z" finished-at="2018-08-10T13:47:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suite.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[galaxy_s8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="test_01()[pri:1, instance:com.browserstack.suite.SuiteAddABillWithSaving@13969fbe]" name="test_01" duration-ms="164874" started-at="2018-08-10T13:47:44Z" finished-at="2018-08-10T13:50:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	expected [0] but found [180]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	expected [0] but found [180]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.browserstack.suite.AppKeyWords.addABillWithSaving(AppKeyWords.java:136)
+	at com.browserstack.suite.SuiteAddABillWithSaving.test_01(SuiteAddABillWithSaving.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteAddABillWithSaving@13969fbe]" name="tearDown" is-config="true" duration-ms="10928" started-at="2018-08-10T13:50:29Z" finished-at="2018-08-10T13:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.suite.SuiteAddABillWithSaving -->
+      <class name="com.browserstack.suite.SuiteCheckingAlertsAndErrors">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteCheckingAlertsAndErrors@6bf256fa]" name="setUp" is-config="true" duration-ms="34944" started-at="2018-08-10T13:35:53Z" finished-at="2018-08-10T13:36:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suite.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[galaxy_s8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test_01()[pri:0, instance:com.browserstack.suite.SuiteCheckingAlertsAndErrors@6bf256fa]" name="test_01" duration-ms="265085" started-at="2018-08-10T13:36:28Z" finished-at="2018-08-10T13:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteCheckingAlertsAndErrors@6bf256fa]" name="tearDown" is-config="true" duration-ms="10968" started-at="2018-08-10T13:40:53Z" finished-at="2018-08-10T13:41:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.suite.SuiteCheckingAlertsAndErrors -->
+      <class name="com.browserstack.suite.SuiteReconcileScenario1">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteReconcileScenario1@6cd8737]" name="setUp" is-config="true" duration-ms="34824" started-at="2018-08-10T13:35:53Z" finished-at="2018-08-10T13:36:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suite.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[galaxy_s8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="test_01()[pri:0, instance:com.browserstack.suite.SuiteReconcileScenario1@6cd8737]" name="test_01" duration-ms="42027" started-at="2018-08-10T13:36:28Z" finished-at="2018-08-10T13:37:10Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.35 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'DESKTOP-GVPH1DS', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.mmfais.app, browserstack.tunnelIdentifier=, browserstack.appiumLogs=true, bundleID=com.mmfais.app, deviceName=samsung galaxy s8, platform=ANDROID, browserstack.deviceLogs=true, browserstack.video.disableWaterMark=true, acceptSslCerts=false, nativeWebScreenshot=true, acceptSslCert=false, automationName=uiautomator2, platformName=android, udid=ce04171420af10fb0c, 64bit=false, appium_port=38084, browserstack.debug=true, systemPort=8204, browserstack.minOSVersion=5.0, browserstack.ie.noFlash=false, os_version=, mobile={browser=mobile, version=Samsung Galaxy S8-7.0}, version=, appActivity=com.mmfais.app.MainActivity, browserstack.video=true, orig_os=android, realMobile=true, device=samsung galaxy s8, browserstack.callbackStop=true, proxy_type=node}]
+Session ID: 3688bc4578d5f7142ef55b6c9057ea5100c04e19
+*** Element info: {Using=-android uiautomator, value=UiSelector().textMatches("Enter Name")}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.35 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'DESKTOP-GVPH1DS', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.mmfais.app, browserstack.tunnelIdentifier=, browserstack.appiumLogs=true, bundleID=com.mmfais.app, deviceName=samsung galaxy s8, platform=ANDROID, browserstack.deviceLogs=true, browserstack.video.disableWaterMark=true, acceptSslCerts=false, nativeWebScreenshot=true, acceptSslCert=false, automationName=uiautomator2, platformName=android, udid=ce04171420af10fb0c, 64bit=false, appium_port=38084, browserstack.debug=true, systemPort=8204, browserstack.minOSVersion=5.0, browserstack.ie.noFlash=false, os_version=, mobile={browser=mobile, version=Samsung Galaxy S8-7.0}, version=, appActivity=com.mmfais.app.MainActivity, browserstack.video=true, orig_os=android, realMobile=true, device=samsung galaxy s8, browserstack.callbackStop=true, proxy_type=node}]
+Session ID: 3688bc4578d5f7142ef55b6c9057ea5100c04e19
+*** Element info: {Using=-android uiautomator, value=UiSelector().textMatches("Enter Name")}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByAndroidUIAutomator(AndroidDriver.java:365)
+	at com.browserstack.suite.AppKeyWords.checkReconcilingScenario1(AppKeyWords.java:385)
+	at com.browserstack.suite.SuiteReconcileScenario1.test_01(SuiteReconcileScenario1.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteReconcileScenario1@6cd8737]" name="tearDown" is-config="true" duration-ms="10933" started-at="2018-08-10T13:37:10Z" finished-at="2018-08-10T13:37:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.suite.SuiteReconcileScenario1 -->
+      <class name="com.browserstack.suite.SuiteReconcileScenario2">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteReconcileScenario2@22f71333]" name="setUp" is-config="true" duration-ms="35102" started-at="2018-08-10T13:35:53Z" finished-at="2018-08-10T13:36:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suite.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[galaxy_s8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test_01()[pri:0, instance:com.browserstack.suite.SuiteReconcileScenario2@22f71333]" name="test_01" duration-ms="234285" started-at="2018-08-10T13:36:28Z" finished-at="2018-08-10T13:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteReconcileScenario2@22f71333]" name="tearDown" is-config="true" duration-ms="10924" started-at="2018-08-10T13:40:22Z" finished-at="2018-08-10T13:40:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.suite.SuiteReconcileScenario2 -->
+    </test> <!-- TestGalaxy8 -->
+  </suite> <!-- KevinApp -->
+</testng-results>
